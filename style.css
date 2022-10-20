@@ -1,0 +1,30 @@
+@import url(styles/cabecalho.css);
+@import url(styles/menu-lateral.css);
+@import url(styles/principal.css);
+
+:root{
+    --fundo-pagina: #1D232A;
+    --fundo-menu: #15191C;
+    --fundo-cartao: #2C343A;
+    --fundo-botao: #0480DC;
+    --branco: #FFF;
+    --cor-secundaria: #95999C;
+    --fonte: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--fundo-pagina);
+    color: var(--branco);
+    font-family: var(--fonte);
+    font-size: 16px;
+}
+
+
+/****** @media 1440px */
+@media screen and (min-width: 1440px) {
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
